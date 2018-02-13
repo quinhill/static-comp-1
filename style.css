@@ -6,14 +6,9 @@ html {
 body {
   height: 100%;
   width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
 }
-
-/*.container {
-  width: 100%
-  height: 100%;
-  display: flex;
-
-}*/
 
 .div-left {
   display: flex;
@@ -31,53 +26,155 @@ body {
 }
 
 img {
-  height: 100%;
+  height: 9vh;
+  margin-top: 2vh;
 }
 
-article {
+section {
   width: 33.333%;
   height: 33.333%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.5vh;
+  font-weight: 400;
 }
 
-.top-left {
+.section-top-left {
   background-color: #690B1B;
   width: 66.666%;
 }
 
-.top-right {
+h2 {
+  font-size: 5vh;
+  margin: 2vh;
+}
+
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  background-color: #690B1B;
+  margin: 3vh;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2.5vh;
+  padding-top: 2vh;
+  color: white;
+  text-decoration: underline;
+}
+
+
+.button-icon {
+  height: 4vh;
+  margin-right: 10%;
+  float: left;
+  padding-bottom: 1vh;
+}
+
+.section-top-right {
   background-color: #BC4177;
 }
 
-.mid-left {
+.section-mid-left {
   background-color: #532B33;
 }
 
-.mid-center {
+#experience-icon {
+  height: 8vh;
+}
+
+.section-mid-center {
   background-color: #71292A;
 }
 
-.mid-right {
+.section-mid-right {
   background-color: #9D6C89;
 }
 
-.bottom-left {
+.section-bottom-left {
   background-color: #690B1B;
 }
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
 
-.bottom-center {
+.img-social-icons {
+  height: 4vh;
+  margin: 5%;
+}
+
+.img-social-icons:hover {
+  height: 8vh;
+}
+
+.section-bottom-center {
   background-color: #9D6C89;
 }
 
-.bottom-right {
+.section-bottom-right {
   background-color: #690B1B;
 }
 
-.large-img {
-  width: 100%;
-  height: auto;
+#blog-icon {
+  margin-left: 5%;
+  height: 8vh;
+}
+
+.div-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.image-dots {
+  height: 6vh;
+  display: flex;
+  align-self: flex-start;
+  position: fixed;
+  margin-left: 36%;
 }
 
 
+
+@media only screen and (max-width: 500px) {
+  .div-left {
+    width: 100%;
+  }
+
+  .section-top-left {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .div-right {
+    width: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .button-icon {
+    width: 100%;
+  }
+}
 
 
 
